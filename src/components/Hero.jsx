@@ -1,4 +1,6 @@
 import InputCol from "./InputCol";
+import main from "../assets/images/main.png";
+import bg from "../assets/images/bg.png";
 
 const Hero = () => {
   return (
@@ -17,6 +19,20 @@ const Hero = () => {
         >
           View results
         </button>
+      </div>
+      <div className=" bg-gradient-to-r from-[#064646] to-[#091a1a94] w-4/5 ml-auto hidden lg:block ">
+        <div className="relative ">
+          <img
+            src={bg}
+            alt="background image"
+            className="absolute right-0 top-40"
+          />
+          <img
+            src={main}
+            alt="main image"
+            className="absolute top-[4.6rem] -left-24 hidden xl:block  "
+          />
+        </div>
       </div>
     </div>
   );
